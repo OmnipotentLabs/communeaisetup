@@ -67,11 +67,62 @@ nano ~/.bashrc
 - This opens Nano text editor, use the arrow keys on the keyboard and go down to the end of the file.
 - Paste or write (export PATH="$HOME/.local/bin:$PATH") without () at the end of the file, if you are new to Nano, one right-click will paste where the cursor is.
 - Once you have added the above line, press CTRL + x, answer Y and press enter to save and overwrite.
+- On to the next step, several commands in row, just copy and paste one after the next.
 
-
-
-
-
+```sh
+pipenv install click numpy protobuf==3.20 streamlit
+```
+```sh
+git clone https://github.com/commune-ai/commune.git
+```
+```sh
+cd commune
+```
+```sh
+make pull
+```
+- This one can take a while
+```sh
+pip install -e ./
+```
+```sh
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+```
+```sh
+source "$HOME/.cargo/env"
+```
+```sh
+rustup install nightly-2023-01-01
+```
+```sh
+cd ..
+```
+- Check the owner of the commune folder. if the owner is root change back to user.
+- Check the owner of the folder
+```sh
+ls -l
+```
+- Update ownership (if needed), this has to be done once more for some reason.
+```sh
+sudo chown -R $USER commune
+```
+- Check if Commune is working
+```sh
+c modules
+```
+- Get the root key, save this.
+```sh
+c root_key
+```
+- Now we need to update some more permissions. 
+```sh
+sudo chown $USER /var/run/docker.sock && sudo chown -R $USER ~/commune
+```
+- If you want you can start up a local node now.
+```sh
+c start_local_node 
+```
+<br><br>
 
 
 
