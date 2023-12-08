@@ -14,7 +14,8 @@ https://github.com/Visate/communeai-scratchpad
 
 
 ### After reboot start Docker Desktop
-- Start Docker-desktop, you can skip registering if you want. *(Sometimes Docker-desktop can crash the first time it starts and can ask if you want to reset to default, just click reset and restart Docker-desktop if this happens)*
+- Start Docker-desktop, you can skip registering if you want.
+<br>*(Sometimes Docker-desktop can crash the first time it starts and can ask if you want to reset to default, just click reset and restart Docker-desktop if this happens)*
 
 ### Setup WSL and Ubuntu
 - **Right** click the Start menu and open Windows Powershell (admin).
@@ -28,7 +29,7 @@ wsl --install -d Ubuntu
 - Open Docker-Desktop and go to Settings --> Resources --> WSL integration.
 - Check the box for "Enable integration with my default WSL distro".
 - Enable "Enable integration with additional distros:" for the Ubuntu distros.
-- Click on "Apply a& restart".
+- Click on "Apply & restart".
 
 ### Start Ubuntu
 - Click on the Start menu and start Ubuntu, there should now be a shortcut in the Start menu.
@@ -54,7 +55,7 @@ pip install --user pipenv
 ```sh
 python3 -m site --user-base
 ```
-- Now let's update the path.
+- Now let's update the path, the above path with bin at the end.
 
 ```sh
 export PATH="$HOME/.local/bin:$PATH"
@@ -65,9 +66,9 @@ export PATH="$HOME/.local/bin:$PATH"
 nano ~/.bashrc 
 ```
 - This opens Nano text editor, use the arrow keys on the keyboard and go down to the end of the file.
-- Paste or write (export PATH="$HOME/.local/bin:$PATH") without () at the end of the file, if you are new to Nano, one right-click will paste where the cursor is.
+- Paste or write (export PATH="$HOME/.local/bin:$PATH") without () at the end of the file, if you are new to Nano, one right-click will paste **where the cursor is**.
 - Once you have added the above line, press CTRL + x, answer Y and press enter to save and overwrite.
-- On to the next step, several commands in row, just copy and paste one after the next.
+- On to the next steps, we have several commands in a row, just copy and paste one after the next.
 
 ```sh
 pipenv install click numpy protobuf==3.20 streamlit
