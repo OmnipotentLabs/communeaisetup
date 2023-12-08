@@ -39,7 +39,7 @@ sudo apt update && sudo apt upgrade
 ```
 *If you see a message regarding **libcuda.so**, you can ignore this. It is just a warning.*
 
-- Let's continue the setup, now we need to install pip
+- Let's continue the setup, now we need to install pip.
 
 ```sh
 sudo apt install -y python3-pip
@@ -49,7 +49,30 @@ sudo apt install -y python3-pip
 ```sh
 pip install --user pipenv
 ```
-- 
+- Check our path. The below returns /home/omni/.local (for the sake of this guide).
+
+```sh
+python3 -m site --user-base
+```
+- Now let's update the path.
+
+```sh
+export PATH="$HOME/.local/bin:$PATH"
+```
+-  Permanently add to the path
+
+```sh
+nano ~/.bashrc 
+```
+- This opens Nano text editor, use the arrow keys on the keyboard and go down to the end of the file.
+- Paste or write (export PATH="$HOME/.local/bin:$PATH") without () at the end of the file, if you are new to Nano, one right-click will paste where the cursor is.
+- Once you have added the above line, press CTRL + x, answer Y and press enter to save and overwrite.
+
+
+
+
+
+
 
 
 
