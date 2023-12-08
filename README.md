@@ -125,6 +125,17 @@ c start_local_node
 ```
 <br><br>
 
+### How to start Commune the second time
+- If you want to or need to get back into Commune and use it, just do to following.
+- Make sure Docker-Desktop is running.
+- Start Ubuntu from the Start menu.
+- Type.
+```sh
+cd commune
+```
+- From here you can use any of the commune commands i.e. c mcap, c stats and so on.
+- Best of luck!
+<br><br><br><br>
 
 
 
