@@ -1,3 +1,5 @@
+## Work in progress!!!
+
 First off, this is based on the installation guide made by Visate. Without his steps, I would have been stuck!<br>
 For more info regarding many of the below steps. please read more on his page.
 
