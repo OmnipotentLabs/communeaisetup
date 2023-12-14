@@ -124,7 +124,7 @@ sudo chown -R omni:omni ~/commune
 ```
 
 ### Is commune running?
-- You should still be in the ~/commune folder. (~/ this is a shortcut to your home folder).
+- You should still be in the \~/commune folder. (\~/ this is a shortcut to your home folder).
 - Let's see if you can list the modules.
 ```sh
 c modules
