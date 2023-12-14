@@ -33,16 +33,6 @@ sudo apt update && sudo apt -y upgrade
 ```
 *If you see a message regarding **libcuda.so**, you can ignore this. It is just a warning.*
 
-### Docker stuff
-- Create Docker group.
-```sh
-sudo groupadd docker
-```
-- Add your user to the Docker group.
-```sh
-sudo usermod -aG docker $USER
-```
-
 ### Install dependencies
 - Install pip
 ```sh
