@@ -147,6 +147,7 @@ pipenv shell
 <br><br><br><br>
 
 ### Extra steps, if you want to run a local node.
+- Before you begin the below steps, you need to reboot at least once after completing the above steps and setting up Commune.
 - Install Docker
 ```sh
 sudo apt install docker.io
@@ -155,6 +156,7 @@ sudo apt install docker.io
 ```sh
 sudo usermod -aG docker $USER
 ```
+- **REBOOT!** Windows, do not skip this step.
 - Go to the commune folder
 ```sh
 cd ~/commune/
