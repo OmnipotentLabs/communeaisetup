@@ -156,7 +156,7 @@ sudo apt install docker.io
 ```sh
 sudo usermod -aG docker $USER
 ```
-- **REBOOT!** Windows, do not skip this step.
+- **REBOOT Windows!!**, do not skip this step.
 - Go to the commune folder
 ```sh
 cd ~/commune/
