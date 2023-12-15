@@ -146,7 +146,7 @@ pipenv shell
 - Best of luck!
 <br><br><br><br>
 
-### Extra steps, if you can start local node.
+### Extra steps, if you want to run a local node.
 - Install Docker
 ```sh
 sudo apt install docker.io
