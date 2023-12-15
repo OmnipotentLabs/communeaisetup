@@ -126,7 +126,7 @@ c modules
 ```sh
 c root_key
 ```
-- You can start a local node if you need to. This could be some extra configuration depending on your system.
+- You can start a local node if you need to. There could be some extra configuration depending on your system, see below for more info.
 ```sh
 c start_local_node
 ```
