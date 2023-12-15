@@ -108,7 +108,7 @@ rustup target add wasm32-unknown-unknown
 ### 7. Make sure you are the owner of the commune folder
 - Replace omni with your username
 ```sh
-sudo chown -R omni:omni ~/commune
+sudo chown -R omni:omni ~/.commune
 ```
 
 ### 8. Is commune running?
