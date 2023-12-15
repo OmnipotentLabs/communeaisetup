@@ -156,12 +156,13 @@ sudo usermod -aG docker $USER
 ```
 - **REBOOT Windows!!**, do not skip this step.
 - Go to the commune folder
-```sh
-cd ~/commune/
-```
 - Start the pipenv
 ```sh
 pipenv shell
+```
+- Enter commune folder
+```sh
+cd ~/commune/
 ```
 - Start local node
 ```sh
