@@ -5,7 +5,7 @@ https://github.com/Visate/communeai-scratchpad
 <br><br>
 # Setup Commune on Windows 10 Pro/Enterprise without Docker Desktop
 
-### Setup WSL and Ubuntu
+### 1. Setup WSL and Ubuntu
 - **Right** click the Start menu and open Windows Powershell (admin).
 - First set the default version of WSL.
 ```sh
@@ -22,7 +22,7 @@ wsl --install -d Ubuntu-22.04
 ```
 - We could continue directly from here but it is good to check if all is working, so let's close the Powershell window.
 
-### Start Ubuntu and update
+### 2. Start Ubuntu and update
 - Click on the Start menu and start Ubuntu, there should now be a shortcut for Ubuntu in the Start menu.
 - Let's start with updating and upgrading our installation.
 
@@ -31,7 +31,7 @@ sudo apt update && sudo apt -y upgrade
 ```
 *If you see a message regarding **libcuda.so**, you can ignore this. It is just a warning.*
 
-### Install dependencies
+### 3. Install dependencies
 - Install pip
 ```sh
 sudo apt install -y python3-pip
@@ -63,13 +63,13 @@ nano ~/.bashrc
 pipenv install click numpy protobuf==3.20 streamlit
 ```
 
-### Starting pipenv
+### 4. Starting pipenv
 - Start pipenv
 ```sh
 pipenv shell
 ```
 
-### Setup/installing Commune
+### 5. Setup/installing Commune
 - Clone Commune Git
 ```sh
 git clone https://github.com/commune-ai/commune.git
@@ -87,7 +87,7 @@ make pull
 pip install -e ./
 ```
 
-### Install and configure Rust
+### 6. Install and configure Rust
 - Run the below commands, one after the other.
 ```sh
 curl https://sh.rustup.rs -sSf | sh -s -- -y
@@ -105,13 +105,13 @@ rustup override set nightly-2023-01-01
 rustup target add wasm32-unknown-unknown
 ```
 
-### Make sure you are the owner of the commune folder
+### 7. Make sure you are the owner of the commune folder
 - Replace omni with your username
 ```sh
 sudo chown -R omni:omni ~/commune
 ```
 
-### Is commune running?
+### 8. Is commune running?
 - You should still be in the \~/commune folder. (\~/ this is a shortcut to your home folder).
 - Let's see if you can list the modules.
 ```sh
@@ -119,7 +119,7 @@ c modules
 ```
 - If you could see a list of modules, **congratulations!**, commune is now working!
 
-### Some extra commune commands.
+### 9. Some extra commune commands.
 - Find your root key, this is good to save.
 ```sh
 c root_key
@@ -129,7 +129,7 @@ c root_key
 c start_local_node
 ```
 
-### How to start Commune the second time
+### 10. How to start Commune the second time
 - If you want to or need to get back into Commune and use it, just do to following.
 - Start Ubuntu from the Start menu.
 - Open the commune folder
@@ -144,7 +144,7 @@ pipenv shell
 - Best of luck!
 <br><br><br><br>
 
-### Extra steps, if you want to run a local node.
+### 11. Extra steps, if you want to run a local node.
 - Before you begin the below steps, you need to reboot at least once after completing the above steps and setting up Commune.
 - Install Docker
 ```sh
@@ -168,7 +168,17 @@ pipenv shell
 c start_local_node
 ```
 
-
+### 12. Troubleshooting
+- If you have issues installing Ubuntu on step 1, run the tree below commands and reboot your computer.
+```sh
+wsl --shutdown
+```
+```sh
+netsh winsock reset
+```
+```sh
+netsh int ip reset
+```
 
 
 
