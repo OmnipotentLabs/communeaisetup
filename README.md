@@ -169,7 +169,7 @@ c start_local_node
 ```
 
 ### 12. Troubleshooting
-- If you have issues installing Ubuntu on step 1, run the tree below commands and reboot your computer.
+- If you have issues installing Ubuntu on step 1, run the three below commands and reboot your computer.
 ```sh
 wsl --shutdown
 ```
