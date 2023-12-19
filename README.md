@@ -5,6 +5,9 @@ https://github.com/Visate/communeai-scratchpad
 <br><br>
 # Setup Commune on Windows 10 Pro/Enterprise without Docker Desktop
 
+YouTube version.<br>
+https://youtu.be/XyiW0suKqyo
+
 *(for the people that would like to know what you are installing, you can find links at the bottom of the page)*
 
 ### 1. Setup WSL and Ubuntu
