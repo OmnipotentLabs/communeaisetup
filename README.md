@@ -187,16 +187,15 @@ netsh int ip reset
 ```
 
 ### 13. For the people that would like to know what they are installing.
-<be>
 
-**WSL:** https://learn.microsoft.com/en-us/windows/wsl/about<br>
-**Ubuntu:** https://ubuntu.com/<br>
-**Python:** https://www.python.org/<br>
-**PIP:** https://pypi.org/project/pip/<br>
-**pipenv:** https://pypi.org/project/pipenv/<br>
-**Shell:** https://en.wikipedia.org/wiki/Shell_(computing)<br>
-**Commune:** https://github.com/commune-ai/commune<br>
-**Rust:** https://www.rust-lang.org/<br>
-**Docker:** https://www.docker.com/<br>
-**Why update your PATH:** https://realpython.com/add-python-to-path/#how-to-add-python-to-path-on-linux-and-macos<br>
+- **WSL:** https://learn.microsoft.com/en-us/windows/wsl/about
+- **Ubuntu:** https://ubuntu.com/
+- **Python:** https://www.python.org/
+- **PIP:** https://pypi.org/project/pip/
+- **pipenv:** https://pypi.org/project/pipenv/
+- **Shell:** https://en.wikipedia.org/wiki/Shell_(computing)
+- *Commune:** https://github.com/commune-ai/commune
+- **Rust:** https://www.rust-lang.org/
+- **Docker:** https://www.docker.com/
+- **Why update your PATH:** https://realpython.com/add-python-to-path/#how-to-add-python-to-path-on-linux-and-macos
 <br><br>
