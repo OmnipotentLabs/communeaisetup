@@ -5,6 +5,8 @@ https://github.com/Visate/communeai-scratchpad
 <br><br>
 # Setup Commune on Windows 10 Pro/Enterprise without Docker Desktop
 
+*(for the people that would like to know what you are installing, you can find links at the bottom of the page)*
+
 ### 1. Setup WSL and Ubuntu
 - **Right** click the Start menu and open Windows Powershell (admin).
 - First set the default version of WSL.
@@ -44,7 +46,7 @@ pip install pipenv --user
 ```sh
 python3 -m site --user-base
 ```
-- Update path, append /bin to the above path. Replace omni with your own username.
+- Update path, append /bin to the above path. Replace omni with your username.
 ```sh
 export PATH="/home/omni/.local/bin:$PATH"
 ```
@@ -112,7 +114,7 @@ sudo chown -R omni:omni ~/.commune
 ```
 
 ### 8. Is commune running?
-- You should still be in the \~/commune folder. (\~/ this is a shortcut to your home folder).
+- You should still be in the \~/commune folder. (\~/ This is a shortcut to your home folder).
 - Let's see if you can list the modules.
 ```sh
 c modules
@@ -130,7 +132,7 @@ c start_local_node
 ```
 
 ### 10. How to start Commune the second time
-- If you want to or need to get back into Commune and use it, just do to following.
+- If you want to or need to get back into Commune and use it, do the following.
 - Start Ubuntu from the Start menu.
 - Open the commune folder
 ```sh
@@ -184,5 +186,14 @@ netsh winsock reset
 netsh int ip reset
 ```
 
-
-
+### 13. For the people that would like to know what they are installing.
+**WSL:** https://learn.microsoft.com/en-us/windows/wsl/about
+**Ubuntu:** https://ubuntu.com/
+**Python:** https://www.python.org/
+**PIP:** https://pypi.org/project/pip/
+**pipenv:** https://pypi.org/project/pipenv/
+**Shell:** https://en.wikipedia.org/wiki/Shell_(computing)
+**Commune:** https://github.com/commune-ai/commune
+**Rust:** https://www.rust-lang.org/
+**Docker:** https://www.docker.com/
+**Why update your PATH:** https://realpython.com/add-python-to-path/#how-to-add-python-to-path-on-linux-and-macos
