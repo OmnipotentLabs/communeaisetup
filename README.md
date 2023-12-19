@@ -196,6 +196,7 @@ netsh int ip reset
 **pipenv:** https://pypi.org/project/pipenv/<br>
 **Shell:** https://en.wikipedia.org/wiki/Shell_(computing)<br>
 **Commune:** https://github.com/commune-ai/commune<br>
-**Rust:** https://www.rust-lang.org/
-**Docker:** https://www.docker.com/
-**Why update your PATH:** https://realpython.com/add-python-to-path/#how-to-add-python-to-path-on-linux-and-macos
+**Rust:** https://www.rust-lang.org/<br>
+**Docker:** https://www.docker.com/<br>
+**Why update your PATH:** https://realpython.com/add-python-to-path/#how-to-add-python-to-path-on-linux-and-macos<br>
+<br><br>
