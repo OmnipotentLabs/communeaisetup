@@ -188,6 +188,11 @@ netsh winsock reset
 ```sh
 netsh int ip reset
 ```
+- If you see an error like this "fatal: No url found for submodule path 'comchat' in .gitmodules" when you try make pull, run this and try again.
+```sh
+git rm --cached comchat
+```
+
 
 ### 13. For the people that would like to know what they are installing.
 
