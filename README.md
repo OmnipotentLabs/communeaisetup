@@ -132,7 +132,7 @@ c modules
 - Now that we know that Commune is running, lets set the port range for Commune (this is the ports you need to set in the port forward rule).
 - The blow range is just an example.
 ```sh
-c set_port_range 5100 5500 
+c set_port_range 50000 55000 
 ```
 - If you could see a list of modules, **congratulations!**, commune is now working!
 
