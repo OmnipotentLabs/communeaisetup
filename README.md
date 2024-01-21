@@ -10,6 +10,9 @@ https://youtu.be/XyiW0suKqyo
 
 *(for the people that would like to know what you are installing, you can find links at the bottom of the page)*
 
+### Prerequisites
+Your IP needs to be a public IP (as in not behind a nat) and ensure you have setup port forwarding rules. Otherwise, Commune will not work!
+
 ### 1. Setup WSL and Ubuntu
 - **Right** click the Start menu and open Windows Powershell (admin).
 - First set the default version of WSL.
@@ -124,7 +127,15 @@ c modules
 ```
 - If you could see a list of modules, **congratulations!**, commune is now working!
 
-### 9. Some extra commune commands.
+### 9. Is commune running?
+- Now that we know that Commune is running, lets set the port range for Commune (this is the ports you need to set in the port forward rule).
+- The blow range is just an example.
+```sh
+c set_port_range 5100 5500 
+```
+- If you could see a list of modules, **congratulations!**, commune is now working!
+
+### 10. Some extra commune commands.
 - Find your root key, this is good to save.
 ```sh
 c root_key
@@ -134,7 +145,7 @@ c root_key
 c start_local_node
 ```
 
-### 10. How to start Commune the second time
+### 11. How to start Commune the second time
 - If you want to or need to get back into Commune and use it, do the following.
 - Start Ubuntu from the Start menu.
 - Open the commune folder
@@ -149,7 +160,7 @@ pipenv shell
 - Best of luck!
 <br><br><br><br>
 
-### 11. Extra steps, if you want to run a local node.
+### 12. Extra steps, if you want to run a local node.
 - Before you begin the below steps, you need to reboot at least once after completing the above steps and setting up Commune.
 - Install Docker
 ```sh
@@ -174,7 +185,7 @@ cd ~/commune/
 c start_local_node
 ```
 
-### 12. Troubleshooting
+### 13. Troubleshooting
 - If you have issues installing Ubuntu on step 1, run the four below commands and reboot your computer.
 ```sh
 wsl --unregister Ubuntu-22.04
@@ -201,7 +212,7 @@ c dash public=true
 c st public=true
 ```
 
-### 13. For the people that would like to know what they are installing.
+### 14. For the people that would like to know what they are installing.
 
 - **WSL:** https://learn.microsoft.com/en-us/windows/wsl/about
 - **Ubuntu:** https://ubuntu.com/
