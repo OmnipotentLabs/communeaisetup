@@ -127,7 +127,7 @@ c modules
 ```
 - If you could see a list of modules, **congratulations!**, commune is now working!
 
-### 9. Is commune running?
+### 9. Set port range
 - Now that we know that Commune is running, lets set the port range for Commune (this is the ports you need to set in the port forward rule).
 - The blow range is just an example.
 ```sh
