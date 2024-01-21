@@ -12,6 +12,7 @@ https://youtu.be/XyiW0suKqyo
 
 ### Prerequisites
 Your IP needs to be a public IP (as in not behind a nat) and ensure you have setup port forwarding rules. Otherwise, Commune will not work!
+See step 9 for more details.
 
 ### 1. Setup WSL and Ubuntu
 - **Right** click the Start menu and open Windows Powershell (admin).
