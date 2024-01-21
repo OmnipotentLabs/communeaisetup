@@ -193,6 +193,13 @@ netsh int ip reset
 git rm --cached comchat
 ```
 
+- If you see this error in the dashboard KeyError: 'module', enter the below and try starting the cash again.
+```sh
+c dash public=true
+```
+```sh
+c st public=true
+```
 
 ### 13. For the people that would like to know what they are installing.
 
